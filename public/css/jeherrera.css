@@ -36,7 +36,7 @@ h5,
 h6 {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
-    color: #666;
+    color: #bababa; /*#666*/
     margin: 0 0 20px 0;
     padding: 0;
 }
@@ -1234,17 +1234,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact {
     position: relative;
     padding: 80px 0 80px 0;
+    background-color: #141618;
+   
+}
+
+#contact .container .row {
+    justify-content: space-evenly;
 }
 
 #contact .g-map {
-    background: #ffffff;
+    background: none;
 }
-
 @media (max-width: 767.98px) {
     #contact .g-map {
         margin-bottom: 25px;
     }
-
     #contact.container {
         width: 100%;
     }
@@ -1252,8 +1256,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #contact .form {
-    background: #fff;
-    color: #666666;
+    background: #141618;
+    color: #f8f8f8c8;
     font-weight: 400;
 }
 
