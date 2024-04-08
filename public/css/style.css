@@ -259,8 +259,10 @@ h6 {
 /* ================================================= */
 
 .banner {
-    background: url("../img/page-bg.jpg") center top no-repeat;
+    background: url("../img/theatre2.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 200px 0 25px 0;
     position: relative;
 }
@@ -1424,12 +1426,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 300px;
     cursor: pointer;
 }
-/* 
-.big_div_film {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-} */
+
+.div_select {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* ================================================= */
 /* ------------------- Footer CSS ------------------ */
