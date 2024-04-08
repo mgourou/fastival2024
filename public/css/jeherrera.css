@@ -923,6 +923,43 @@ body.mobile-nav-active #mobile-nav-toggle {
         font-weight: 400;
     }
 }
+/* ================================================= */
+/* ------------------ Newsletter Style ------------- */
+/* ================================================= */
+#newsletter .row form {
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+#newsletter .row form input, label {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+
+#newsletter form button {
+    width: 100px;
+    padding: 5px;
+    background-color: #D2691E;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    margin-left: 80%;
+    margin-right: 20%;
+}
+
+@media (max-width: 500px) {
+    #newsletter .row form * {
+        display: inline;
+        width: fit-content;
+    }
+    #newsletter .row form button {
+        margin-right: 5%;
+        margin-left: 70%;
+    }
+}
+
 
 /* ================================================= */
 /* ------------------ Venue Style ------------------ */
