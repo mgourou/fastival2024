@@ -1290,8 +1290,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact {
     position: relative;
     padding: 80px 0 80px 0;
-    background-color: #141618;
-   
+    background-color: #f2f2f2;
+}
+
+#contact h2 {
+    color : #222222;
 }
 
 #contact .container .row {
@@ -1312,8 +1315,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #contact .form {
-    background: #141618;
-    color: #f8f8f8c8;
+    background: #f2f2f2;
+    color: #222222;
     font-weight: 400;
 }
 
@@ -1357,6 +1360,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-radius: 0;
     box-shadow: none;
     font-size: 16px;
+    background-color: #dbdbdb;
+    border-radius: 5px;
 }
 
 #contact .form input:focus,
