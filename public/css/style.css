@@ -1465,7 +1465,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     border: 1px solid #D2691E;
 }
 
-section #tarifs-prix td {
+div #tarifs-prix td {
     width: 100%;
 }
 
