@@ -126,3 +126,32 @@
 
 })(jQuery);
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('select[name="Categories"]').addEventListener('change', function() {
+        let selectedCategory = this.value.toLowerCase();
+        let films = document.querySelectorAll('.div_film');
+
+        films.forEach(function(film) {
+            let categories = film.querySelector('.div_film_info span').textContent.toLowerCase();
+            if (selectedCategory === 'tous' || categories.includes(selectedCategory)) {
+                film.style.display = 'flex';
+            } else {
+                film.style.display = 'none';
+            }
+        });
+    });
+});
+
+function searchFilms() {
+    var searchText = document.getElementById('searchInput').value.toLowerCase();
+    var films = document.querySelectorAll('.div_film');
+
+    films.forEach(function(film) {
+        var title = film.querySelector('.div_film_info h5').textContent.toLowerCase();
+        if (title.includes(searchText)) {
+            film.style.display = 'flex';
+        } else {
+            film.style.display = 'none';
+        }
+    });
+}
