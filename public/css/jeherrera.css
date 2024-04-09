@@ -926,6 +926,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* ================================================= */
 /* ------------------ Newsletter Style ------------- */
 /* ================================================= */
+#newsletter {
+    padding-top: 5%;
+}
+
 #newsletter .row form {
     width: 100%;
     padding-bottom: 5%;
