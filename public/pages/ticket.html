@@ -28,6 +28,7 @@
     </head>
 
     <body>
+        <a href="#ticket">ticket</a>
         <!-- Header Start -->
         <header id="header">
             <div class="container-fluid">
@@ -89,26 +90,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="single-ticket">
-                            <h2>$80</h2>
-                            <h4>Silver</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                            <a href="#">Buy Ticket</a>
+                            <h2>7,50€</h2>
+                            <h4>Normal</h4>
+                            <p>Pour les moins 18 ans.</p>
+                            <button id="ticket_normal">Acheter</button>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="single-ticket">
-                            <h2>$140</h2>
-                            <h4>Gold</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                            <a href="#">Buy Ticket</a>
+                            <h2>13,50€</h2>
+                            <h4>Adulte</h4>
+                            <p>Pour les plus de 18 ans.</p>
+                            <button id="ticket_adulte">Acheter</button>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="single-ticket">
-                            <h2>$200</h2>
-                            <h4>Platinum</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                            <a href="#">Buy Ticket</a>
+                            <h2>17,50€</h2>
+                            <h4>Groupe</h4>
+                            <p>Pour les groupes de 6 à 12 membres.</p>
+                            <button id="ticket_groupe">Acheter</button>
                         </div>
                     </div>
                 </div>
@@ -120,7 +121,7 @@
         <section id="cart">
             <div class="container">
                 <header class="section-header">
-                    <h3>Cart</h3>
+                    <h3>Carte</h3>
                 </header>
                 <div class="row">
                     <div class="col-md-12">
@@ -129,36 +130,38 @@
                                 <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">Tickets</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col">Total</th>
-                                        <th scope="col">Checkout</th>
+                                        <th scope="col">Prix</th>
+                                        <th scope="col">Quantité</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">Platinum</th>
-                                        <td>$200</td>
-                                        <td><div class="quantity"><input type="text" value="1"></div></td>
-                                        <td>$200</td>
-                                        <td><a href="">Checkout</a></td>
+                                        <th scope="row">Groupe</th>
+                                        <td>17,50€</td>
+                                        <td><div class="quantity"><input min="0" id="Q_groupe" type="number" value="0"></div></td>
+                                        
                                     </tr>
                                     <tr>
-                                        <th scope="row">Gold</th>
-                                        <td>$140</td>
-                                        <td><div class="quantity"><input type="text" value="2"></div></td>
-                                        <td>$280</td>
-                                        <td><a href="">Checkout</a></td>
+                                        <th scope="row">Adulte</th>
+                                        <td>13,50€</td>
+                                        <td><div class="quantity"><input min="0" id="Q_adulte" type="number" value="0"></div></td>
+                                        
+                                     
                                     </tr>
                                     <tr>
-                                        <th scope="row">Silver</th>
-                                        <td>$80</td>
-                                        <td><div class="quantity"><input type="text" value="3"></div></td>
-                                        <td>$240</td>
-                                        <td><a href="">Checkout</a></td>
+                                        <th scope="row">Normal</th>
+                                        <td>7,50€</td>
+                                        <td><div class="quantity"><input min="0" id="Q_normal" type="number" value="0"></div></td>
+                                        
+                                    
                                     </tr>
                                 </tbody>
                             </table>
+                            <p id="total"> Total : 0 €</p>
+                            <div class="reduction">
+                                A plus de 5 tickets, vous avez droit à une réductionde 15 %.
+                                <a href="#Caisse">Caisse</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -170,7 +173,7 @@
         <section id="checkout">
             <div class="container">
                 <header class="section-header">
-                    <h3>Checkout</h3>
+                    <h3 id="Caisse">Caisse</h3>
                 </header>
                 <div class="row form">
                     <div class="col-md-6">
@@ -197,7 +200,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="cards">
-                            <p>We Accept:</p>
+                            <p>Nous acceptons :</p>
                             <img src="../img/credit-cards.png" />
                         </div>
                         <div class="form-group">
@@ -219,7 +222,7 @@
                         </div>
                     </div>
                     <div>
-                        <button type="submit">Place Order</button>
+                        <button type="submit">Confirmer l'achat</button>
                     </div>
                 </div>
             </div>

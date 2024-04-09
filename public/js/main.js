@@ -8,6 +8,7 @@
                 $(this).remove();
             });
         }
+        try {calcultotal()} catch {}
     });
 
     // Back to top button
@@ -18,10 +19,53 @@
             $('.back-to-top').fadeOut('slow');
         }
     });
+
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
+
+    function calcultotal(){
+        let inputNormal = parseInt(document.getElementById("Q_normal").value)
+        let prixNormal = 7.5
+        let inputAdulte = parseInt(document.getElementById("Q_adulte").value)
+        let prixAdulte = 13.5
+        let inputGroupe = parseInt(document.getElementById("Q_groupe").value)
+        let prixGroupe = 17.5
+        let resultat = document.getElementById("total")
+        let quantity = inputNormal + inputAdulte + inputGroupe
+        let prixTotal = prixNormal*inputNormal + prixAdulte*inputAdulte + prixGroupe*inputGroupe
+
+        if(quantity >= 5){
+             prixTotal = prixTotal - (prixTotal/100)*15
+        }
+        resultat.innerText=`Total : ${prixTotal} €` 
+    }
+    $("#ticket_normal").click(function () {
+        let input = document.getElementById("Q_normal")
+        let currentValue = parseInt(input.value) + 1
+        input.value = currentValue
+        calcultotal()
+    });
+
+    $("#ticket_adulte").click(function () {
+        let input = document.getElementById("Q_adulte")
+        let currentValue = parseInt(input.value) + 1
+        input.value = currentValue
+        calcultotal()
+    });
+
+    $("#ticket_groupe").click(function () {
+        let input = document.getElementById("Q_groupe")
+        let currentValue = parseInt(input.value) + 1
+        input.value = currentValue
+        calcultotal()
+    });
+
+    $(document).on("change","#Q_normal", function (e) {
+        calcultotal()
+    });
+
 
     // Initiate superfish on nav menu
     $('.nav-menu').superfish({
@@ -122,6 +166,7 @@
             }
         }
         $button.parent().find('input').val(newVal);
+        calcultotal()
     });
 
 })(jQuery);
