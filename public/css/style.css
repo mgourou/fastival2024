@@ -1722,3 +1722,11 @@ table caption {
     margin: 0;
     padding: 0;
 }
+
+#newsletter form label input {
+    margin-left: 0 !important;
+}
+
+#newsletter form button {
+    margin-left: 0 !important;
+}
