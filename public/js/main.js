@@ -200,3 +200,16 @@ function searchFilms() {
         }
     });
 }
+
+
+function confirmation() {
+    var sub = document.getElementById('sub');
+    var section = document.querySelector('#newsletter');
+    section.innerHTML = 'Vous vous êtes souscrit.'
+    section.style.verticalAlign = 'middle';
+    section.style.height = '40vh';
+    section.style.fontSize = '1.5em';
+    section.style.textAlign = 'center';
+    section.style.paddingTop = '5em';
+    
+}
