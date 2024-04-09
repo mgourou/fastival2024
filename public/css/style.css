@@ -1065,16 +1065,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 15px;
 }
 
-#ticket .single-ticket a {
+#ticket .single-ticket button {
     display: inline-block;
     padding: 8px 30px;
     color: #ffffff;
     background: #D2691E;
+    border: none;
 }
 
-#ticket .single-ticket:hover a {
+#ticket .single-ticket:hover button {
     color: #D2691E;
     background: #222222;
+    cursor: pointer;
 }
 
 /* ================================================= */
@@ -1090,6 +1092,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #cart table {
     margin-bottom: 0;
     text-align: center;
+
 }
 
 #cart .quantity input {
@@ -1128,7 +1131,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #D2691E;
     background: #222222;
 }
-
+#total{
+    padding-block:1em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.reduction{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em; 
+}
 /* ================================================= */
 /* ----------------- Checkout Style ---------------- */
 /* ================================================= */
