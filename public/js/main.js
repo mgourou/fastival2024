@@ -31,7 +31,7 @@
         let inputAdulte = parseInt(document.getElementById("Q_adulte").value)
         let prixAdulte = 13.5
         let inputGroupe = parseInt(document.getElementById("Q_groupe").value)
-        let prixGroupe = 17.5
+        let prixGroupe = 67.5
         let resultat = document.getElementById("total")
         let quantity = inputNormal + inputAdulte + inputGroupe
         let prixTotal = prixNormal*inputNormal + prixAdulte*inputAdulte + prixGroupe*inputGroupe
